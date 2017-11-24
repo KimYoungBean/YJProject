@@ -1,5 +1,6 @@
 jQuery(document).ready(function($){
 
+
 	// hide messages 
 	$("#error").hide();
 	$("#sent-form-msg").hide();

@@ -1,4 +1,5 @@
 (function($) {
+    $("#heart").attr("src","heart_after.png");
 
   $.fn.tweet = function(o){
     var s = $.extend({

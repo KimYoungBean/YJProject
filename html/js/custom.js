@@ -1,6 +1,6 @@
 // Jquery with no conflict
 jQuery(document).ready(function($) {
-	
+
 	//##########################################
 	// COLUMNIZR
 	//##########################################
