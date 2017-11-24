@@ -2,7 +2,7 @@
 
 ## Subject
 
-### Journey(Travel)
+- Journey(Travel)
 
 #### Produced by Youngbeen and Jimin
 
