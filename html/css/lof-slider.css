@@ -25,7 +25,7 @@
 .lof-slidecontent .preload div {
   height: 100%;
   width: 100%;
-  background: transparent url(../img/load-indicator.gif) no-repeat scroll 50% 50%;
+  background: transparent url(../img/load-indicator.png) no-repeat scroll 50% 50%;
 }
 .lof-slidecontent .sliders-wrapper {
   position: relative;
