@@ -1,4 +1,4 @@
-# YJ Project
+﻿# YJ Project
 
 ## Subject
 
@@ -35,5 +35,7 @@
 		- 지민이가 수정한 거 다시 클론해서 수정(이미지 크기 변환)
 	- yb isotope & like button modify (YB)
 		- isotope클래스랑 좋아요 버튼 jquery로 수정
-  - 인천 이미지 및 내용 추가 했는데 크기는 못맞췄어요ㅠㅠ (JM)
-    - 인천 이미지 및 내용 추가
+	- 인천 이미지 및 내용 추가 했는데 크기는 못맞췄어요ㅠㅠ (JM)
+		- 인천 이미지 및 내용 추가
+	- project size modified (YB)
+		- 이미지 사이즈 수정
