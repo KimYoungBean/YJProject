@@ -8,7 +8,7 @@
 		<title>YJ stagram</title>
 		 
 		<!--[if lt IE 9]>
-			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		<link rel="stylesheet" media="all" href="css/style.css"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -84,7 +84,7 @@
 			<div class="wrapper cf">
 				
 				<div id="logo">
-					<a href="index.html"><img src="img/main.png"width="188px" height="40px" alt="Simpler"></a>
+					<a href="index.html"><img src="img/main.png" width="188px" height="40px" alt="Simpler"></a>
 				</div>
 				
 				<!-- nav -->
@@ -106,66 +106,47 @@
 					<div class="main-slider-content" >
 					<ul class="sliders-wrap-inner fullwidth">
 					    <li class="fullwidth">
-					          <img src="img/sararak/airplane.jpg" title="" alt="alt" />
+					          <img src="img/sararak/airplane_slide.jpg" title="" alt="alt" />
 					          <div class="slider-description">
-					            <h4>영빈이오빠죄송해요,,,</h4>
-								  <p>사진크기를못맞추겠어요,,,</p>
-
+					            <h4>YJStagram</h4>
+								  <p>Go to trip now !</p>
 					            </p>
 					         </div>
 					    </li>
 					    
 					    <li>
-					          <<img src="img/sararak/ghana.jpg" title="" alt="alt" />
+					          <<img src="img/sararak/ghana_slide.jpg" title="" alt="alt" />
 					          <div class="slider-description">
-					            <h4></h4>
-					            <p></p>
+					            <h4>Ghana</h4>
+					            <p>In Africa</p>
 					         </div>
 					    </li>
 
 					    
 					    <li>
 
-							<img src="img/sararak/night.jpg" title="" alt="alt" />/>
+							<img src="img/sararak/taiwan_slide.jpg" title="" alt="alt" />/>
 							<div class="slider-description">
-					            <h4></h4>
-					            <p></p>
+					            <h4>Taiwan</h4>
+					            <p>In Asia</p>
 					         </div>
 					    </li>
 
 						<li>
-							<img src="img/sararak/japan.jpg" title="" alt="alt" />
+							<img src="img/sararak/japan_slide.jpg" title="" alt="alt" />
 							<div class="slider-description">
-								<h4></h4>
-								<p></p>
+								<h4>Japan</h4>
+								<p>Sushi</p>
 							</div>
 						</li>
 
 					    <li>
-					          <img src="img/sararak/korea.jpg" title="" alt="alt" />
+					          <img src="img/sararak/korea_slide.jpg" title="" alt="alt" />
 					          <div class="slider-description">
-								  <h4></h4>
-								  <p></p>
+								  <h4>Korea</h4>
+								  <p>The Red Devil</p>
 					         </div>
 					    </li>
-					    
-					    <li>
-					          <img src="img/dummies/slides/mob.jpg" title="" alt="alt" />
-					          <div class="slider-description">
-					            <h4></h4>
-					            <p></p>
-					         </div>
-					    </li>
-					    
-					    <li>
-					          <img src="img/dummies/slides/yb.jpg" title="" alt="alt" />
-					          <div class="slider-description">
-					            <h4>YB</h4>
-					            <p>
-					            </p>
-					         </div>
-					    </li>
-					    
 					  </ul>  	
 					</div>
 					<!-- ENDS slider content --> 
@@ -174,13 +155,11 @@
 					<div class="navigator-content">
 					  <div class="navigator-wrapper">
 					        <ul class="navigator-wrap-inner">
-					           <li><img src="img/dummies/slides/jump_thumb.jpg" alt="alt" /></li>
-					           <li><img src="img/dummies/slides/bbangdo_thumb.JPG" alt="alt" /></li>
-					           <li><img src="img/dummies/slides/woogon_thumb.JPG" alt="alt" /></li>
-					           <li><img src="img/dummies/slides/bridge_thumb.JPG" alt="alt" /></li>
-					           <li><img src="img/dummies/slides/gorila_thumb.JPG" alt="alt" /></li>
-					           <li><img src="img/dummies/slides/mob_thumb.jpg" alt="alt" /></li>
-					           <li><img src="img/dummies/slides/yb_thumb.jpg" alt="alt" /></li>
+					           <li><img src="img/sararak/airplane_slide_thumbs.jpg" alt="alt" /></li>
+					           <li><img src="img/sararak/ghana_slide_thumbs.jpg" alt="alt" /></li>
+					           <li><img src="img/sararak/japan_slide_thumbs.jpg" alt="alt" /></li>
+					           <li><img src="img/sararak/taiwan_slide_thumbs.jpg" alt="alt" /></li>
+					           <li><img src="img/sararak/korea_slide_thumbs.jpg" alt="alt" /></li>
 					        </ul>
 					  </div>
 					  <div class="button-next">Next</div>
@@ -205,11 +184,6 @@
 		<!-- MAIN -->
 		<div id="main">
 			<div class="wrapper cf">
-			
-			
-			
-			
-				
 			<!-- featured -->
 			<div class="home-featured">
 			
@@ -229,19 +203,17 @@
 						<figcaption>
 							<a href="project.html"><h3 class="heading">인천 </h3></a>
 							Inha! Landvibe! </figcaption>
-
-							<script>
-
-                                function damaY() {
-                                    var dama = document.getElementById('bul');
-                                     if (dama.src.match("dama_y")) {
-                                        dama.src = "img/heart_before.png" ;
-                                       } else {
-                                        dama.src = "img/heart_after.png";
+							<img width="30" height="30" id="bul"  src="img/heart_before.png"/>
+                            <script>
+                                $('#bul').on({
+                                    'click':function(){
+                                        var origsrc = $(this).attr('src');
+                                        var src = '';
+                                        if(origsrc == 'img/heart_before.png')   src = 'img/heart_after.png';
+                                        if(origsrc == 'img/heart_after.png')    src = 'img/heart_before.png';
                                     }
-                                }
-							</script>
-							<img width="30" height="30" id="bul" onclick="damaY()" src="img/heart_before.png">
+                                });
+                            </script>
 					</figure>
 
 					<figure class="print">
@@ -252,19 +224,17 @@
 							</a>
 							스린야시장
 						</figcaption>
-							<script>
-
-                                function damaY2() {
-                                    var dama = document.getElementById('bul2');
-                                    if (dama.src.match("dama_y")) {
-                                        dama.src = "img/heart_before2.png" ;
-                                    } else {
-                                        dama.src = "img/heart_after2.png";
-                                    }
+							<img width="30" height="30" id="bul2" src="img/heart_before.png"/>
+                        <script>
+                            $('#bul2').on({
+                                'click':function(){
+                                    var origsrc = $(this).attr('src');
+                                    var src = '';
+                                    if(origsrc == 'img/heart_before.png')   src = 'img/heart_after.png';
+                                    if(origsrc == 'img/heart_after.png')    src = 'img/heart_before.png';
                                 }
-							</script>
-							<img width="30" height="30" id="bul2" onclick="damaY2()" src="img/heart_before2.png">
-
+                            });
+                        </script>
 					</figure>
 
 					
@@ -274,19 +244,18 @@
 						<figcaption>
 							<a href="project.html" ><h3 class="heading">Gorila</h3></a>
 							with Woogon. </figcaption>
-						<script>
 
-                            function damaY3() {
-                                var dama = document.getElementById('bul3');
-                                if (dama.src.match("dama_y")) {
-                                    dama.src = "img/heart_before3.png" ;
-                                } else {
-                                    dama.src = "img/heart_after3.png";
+						<img width="30" height="30" id="bul3" src="img/heart_before.png"/>
+                        <script>
+                            $('#bul3').on({
+                                'click':function(){
+                                    var origsrc = $(this).attr('src');
+                                    var src = '';
+                                    if(origsrc == 'img/heart_before.png')   src = 'img/heart_after.png';
+                                    if(origsrc == 'img/heart_after.png')    src = 'img/heart_before.png';
                                 }
-                            }
-						</script>
-						<img width="30" height="30" id="bul3" onclick="damaY3()" src="img/heart_before3.png">
-
+                            });
+                        </script>
 					</figure>
 					
 					
@@ -295,19 +264,18 @@
 						<figcaption>
 							<a href="project.html" ><h3 class="heading">홍대</h3></a>
 							Jimin's Homeground </figcaption>
-						<script>
 
-                        function damaY4() {
-                            var dama = document.getElementById('bul4');
-                            if (dama.src.match("dama_y")) {
-                                dama.src = "img/heart_before4.png" ;
-                            } else {
-                                dama.src = "img/heart_after4.png";
-                            }
-                        }
-					</script>
-						<img width="30" height="30" id="bul4" onclick="damaY4()" src="img/heart_before4.png">
-
+						<img width="30" height="30" id="bul4"  src="img/heart_before.png"/>
+                        <script>
+                            $('#bul4').on({
+                                'click':function(){
+                                    var origsrc = $(this).attr('src');
+                                    var src = '';
+                                    if(origsrc == 'img/heart_before.png')   src = 'img/heart_after.png';
+                                    if(origsrc == 'img/heart_after.png')    src = 'img/heart_before.png';
+                                }
+                            });
+                        </script>
 					</figure>
 
 
@@ -316,19 +284,18 @@
 						<figcaption>
 							<a href="project.html" ><h3 class="heading">Mob jump</h3></a>
 							good Guys! </figcaption>
-						<script>
 
-                            function damaY5() {
-                                var dama = document.getElementById('bul5');
-                                if (dama.src.match("dama_y")) {
-                                    dama.src = "img/heart_before5.png" ;
-                                } else {
-                                    dama.src = "img/heart_after5.png";
+						<img width="30" height="30" id="bul5"  src="img/heart_before.png"/>
+                        <script>
+                            $('#bul5').on({
+                                'click':function(){
+                                    var origsrc = $(this).attr('src');
+                                    var src = '';
+                                    if(origsrc == 'img/heart_before.png')   src = 'img/heart_after.png';
+                                    if(origsrc == 'img/heart_after.png')    src = 'img/heart_before.png';
                                 }
-                            }
-						</script>
-						<img width="30" height="30" id="bul5" onclick="damaY5()" src="img/heart_before5.png">
-
+                            });
+                        </script>
 					</figure>
 					
 					
@@ -338,19 +305,18 @@
 						<figcaption>
 							<a href="project.html" ><h3 class="heading">宜蘭</h3></a>
 							이란 </figcaption>
-						<script>
 
-                            function damaY6() {
-                                var dama = document.getElementById('bul6');
-                                if (dama.src.match("dama_y")) {
-                                    dama.src = "img/heart_before6.png" ;
-                                } else {
-                                    dama.src = "img/heart_after6.png";
+						<img width="30" height="30" id="bul6"  src="img/heart_before.png"/>
+                        <script>
+                            $('#bul6').on({
+                                'click':function(){
+                                    var origsrc = $(this).attr('src');
+                                    var src = '';
+                                    if(origsrc == 'img/heart_before.png')   src = 'img/heart_after.png';
+                                    if(origsrc == 'img/heart_after.png')    src = 'img/heart_before.png';
                                 }
-                            }
-						</script>
-						<img width="30" height="30" id="bul6" onclick="damaY6()" src="img/heart_before6.png">
-
+                            });
+                        </script>
 					</figure>
 					
 					
@@ -359,40 +325,38 @@
 						<figcaption>
 							<a href="project.html" ><h3 class="heading">YB</h3></a>
 							YoungBeen. </figcaption>
-						<script>
 
-                            function damaY7() {
-                                var dama = document.getElementById('bul7');
-                                if (dama.src.match("dama_y")) {
-                                    dama.src = "img/heart_before7.png" ;
-                                } else {
-                                    dama.src = "img/heart_after7.png";
+						<img width="30" height="30" id="bul7" src="img/heart_before.png"/>
+                        <script>
+                            $('#bul7').on({
+                                'click':function(){
+                                    var origsrc = $(this).attr('src');
+                                    var src = '';
+                                    if(origsrc == 'img/heart_before.png')   src = 'img/heart_after.png';
+                                    if(origsrc == 'img/heart_after.png')    src = 'img/heart_before.png';
                                 }
-                            }
-						</script>
-						<img width="30" height="30" id="bul7" onclick="damaY7()" src="img/heart_before7.png">
-
+                            });
+                        </script>
 					</figure>
-					
-					
+
+
 					<figure class="web">
 						<a href="project.html" class="thumb"><img src="img/dummies/featured/lv.jpg" alt="alt" /></a>
 						<figcaption>
 							<a href="project.html" ><h3 class="heading">Landvibe</h3></a>
 							with Ghanian. </figcaption>
-						<script>
 
-                            function damaY8() {
-                                var dama = document.getElementById('bul8');
-                                if (dama.src.match("dama_y")) {
-                                    dama.src = "img/heart_before8.png" ;
-                                } else {
-                                    dama.src = "img/heart_after8.png";
+						<img width="30" height="30" id="bul8"  src="img/heart_before.png"/>
+                        <script>
+                            $('#bul8').on({
+                                'click':function(){
+                                    var origsrc = $(this).attr('src');
+                                    var src = '';
+                                    if(origsrc == 'img/heart_before.png')   src = 'img/heart_after.png';
+                                    if(origsrc == 'img/heart_after.png')    src = 'img/heart_before.png';
                                 }
-                            }
-						</script>
-						<img width="30" height="30" id="bul8" onclick="damaY8()" src="img/heart_before8.png">
-
+                            });
+                        </script>
 					</figure>
 					
 					
@@ -401,19 +365,18 @@
 						<figcaption>
 							<a href="project.html" ><h3 class="heading">野十金九</h3></a>
 							예류-스펀-진과스-지우펀 </figcaption>
-						<script>
 
-                            function damaY9() {
-                                var dama = document.getElementById('bul9');
-                                if (dama.src.match("dama_y")) {
-                                    dama.src = "img/heart_before9.png" ;
-                                } else {
-                                    dama.src = "img/heart_after9.png";
+						<img width="30" height="30" id="bul9"  src="img/heart_before.png"/>
+                        <script>
+                            $('#bul9').on({
+                                'click':function(){
+                                    var origsrc = $(this).attr('src');
+                                    var src = '';
+                                    if(origsrc == 'img/heart_before.png')   src = 'img/heart_after.png';
+                                    if(origsrc == 'img/heart_after.png')    src = 'img/heart_before.png';
                                 }
-                            }
-						</script>
-						<img width="30" height="30" id="bul9" onclick="damaY9()" src="img/heart_before9.png">
-
+                            });
+                        </script>
 					</figure>
 					
 				</div><!-- ENDS Filter container -->
@@ -429,91 +392,7 @@
 		<!-- ENDS MAIN -->
 		
 		
-		<!-- FOOTER -->
-		<footer>
-			<div class="wrapper cf">
-			
-				<!-- widgets -->
-				<ul  class="widget-cols cf">
-					<li class="first-col">
-						
-						<div class="widget-block">
-							<h4>RECENT POSTS</h4>
-							<div class="recent-post cf">
-								<a href="#" class="thumb"><img src="img/dummies/54x54.gif" alt="Post" /></a>
-								<div class="post-head">
-									<a href="#">Pellentesque habitant morbi senectus</a><span> March 12, 2011</span>
-								</div>
-							</div>
-							<div class="recent-post cf">
-								<a href="#" class="thumb"><img src="img/dummies/54x54.gif" alt="Post" /></a>
-								<div class="post-head">
-									<a href="#">Pellentesque habitant morbi senectus</a><span> March 12, 2011</span>
-								</div>
-							</div>
-							<div class="recent-post cf">
-								<a href="#" class="thumb"><img src="img/dummies/54x54.gif" alt="Post" /></a>
-								<div class="post-head">
-									<a href="#">Pellentesque habitant morbi senectus</a><span> March 12, 2011</span>
-								</div>
-							</div>
-						</div>
-					</li>
-					
-					<li class="second-col">
-						
-						<div class="widget-block">
-							<h4>ABOUT</h4>
-							<p>Folder it's completely free this means you don't have to pay anything <a href="http://luiszuno.com/blog/license" tar >read license</a>.</p> 
-							<p>Visit <a href="http://templatecreme.com/" >Template Creme</a> and find the most beautiful free templates up to date.</p>
-						</div>
-						
-					</li>
-					
-					<li class="third-col">
-						
-						<div class="widget-block">
-							<div id="tweets" class="footer-col tweet">
-		         				<h4>TWITTER WIDGET</h4>
-		         			</div>
-		         		</div>
-		         		
-					</li>
-					
-					<li class="fourth-col">
-						
-						<div class="widget-block">
-							<h4>CATEGORIES</h4>
-							<ul>
-								<li class="cat-item"><a href="#" >Design</a></li>
-								<li class="cat-item"><a href="#" >Photo</a></li>
-								<li class="cat-item"><a href="#" >Art</a></li>
-								<li class="cat-item"><a href="#" >Game</a></li>
-								<li class="cat-item"><a href="#" >Film</a></li>
-								<li class="cat-item"><a href="#" >TV</a></li>
-							</ul>
-						</div>
-		         		
-					</li>	
-				</ul>
-				<!-- ENDS widgets -->	
-				
-				
-				<!-- bottom -->
-				<div class="footer-bottom">
-					<div class="left">by <a href="http://luiszuno.com" >luiszuno.com</a></div>
-						<ul id="social-bar" class="cf sb">
-							<li><a href="http://www.facebook.com"  title="Become a fan" class="facebook">Facebbok</a></li>
-							<li><a href="http://www.twitter.com" title="Follow my tweets" class="twitter"></a></li>
-							<li><a href="http://plus.google.com" title="Enter my circles" class="plus"></a></li>
-						</ul>
-				</div>	
-				<!-- ENDS bottom -->
-			
-			</div>
-		</footer>
-		<!-- ENDS FOOTER -->
-		
+
 	</body>
 	
 	
