@@ -32,3 +32,5 @@
 * 17.11.26
 	- yb image modified (YB)
 		- 지민이가 수정한 거 다시 클론해서 수정(이미지 크기 변환)
+	- yb isotope & like button modify (YB)
+		- isotope클래스랑 좋아요 버튼 jquery로 수정
