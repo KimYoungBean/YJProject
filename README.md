@@ -39,3 +39,7 @@
 		- 인천 이미지 및 내용 추가
 	- project size modified (YB)
 		- 이미지 사이즈 수정
+	- added splash (YB)
+		- 스플래쉬 이미지 추가
+	- delete workspace.xml (YB)
+		- workspace.xml 삭제, .gitignore 추가
