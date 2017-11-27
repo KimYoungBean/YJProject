@@ -25,8 +25,10 @@
 	- jm second, third commit (JM)
 		- 불필요한 코드 삭제(nav, footer)
 	- Merge (JM)
+* 17.11.24
 	- jm forth commit (JM)
 		- jmDev 브랜치 : 이미지 추가
 	- Merge (JM)
+* 17.11.26
 	- yb image modified (YB)
 		- 지민이가 수정한 거 다시 클론해서 수정(이미지 크기 변환)
